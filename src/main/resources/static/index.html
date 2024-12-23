@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Локальная платформа обмена и аренды</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">lol</a>
+                <ul class="nav-links">
+                    <li><a href="#items">Каталог</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="login html.html" class="btn">Войти</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+     
+        <section id="hero">
+            <div class="container">
+                <h1>Локальная платформа для обмена и аренды</h1>
+                <p>Экономьте деньги и находите всё, что нужно, у своих соседей.</p>
+                <a href="#items" class="btn-primary">Просмотреть каталог</a>
+            </div>
+        </section>
+
+       
+        <section id="items" class="catalog">
+            <div class="container">
+                <h2>Доступные предметы</h2>
+                <div class="filters">
+                    <select name="category" id="category">
+                        <option value="">Категория</option>
+                        <option value="tools">Инструменты</option>
+                        <option value="sports">Спорт</option>
+                        <option value="books">Книги</option>
+                    </select>
+                    <select name="location" id="location">
+                        <option value="">Район</option>
+                        <option value="north">Север</option>
+                        <option value="south">Юг</option>
+                        <option value="center">Центр</option>
+                    </select>
+                    <button class="btn">Применить</button>
+                </div>
+
+                <div class="items-list">
+                    <div class="item-card">
+                        <img src="images/drill.jpg" alt="Дрель">
+                        <h3>Дрель</h3>
+                        <p>Аренда за 100 рублей в день</p>
+                        <button class="btn-secondary">Подробнее</button>
+                    </div>
+
+                    <div class="item-card">
+                        <img src="images/bike.jpg" alt="Велосипед">
+                        <h3>Велосипед</h3>
+                        <p>Бесплатный обмен</p>
+                        <button class="btn-secondary">Подробнее</button>
+                    </div>
+
+                    <div class="item-card">
+                        <img src="images/boardgame.jpg" alt="Настольная игра">
+                        <h3>Настольная игра</h3>
+                        <p>Аренда за 50 рублей в день</p>
+                        <button class="btn-secondary">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+   
+        <section id="about" class="about">
+            <div class="container">
+                <h2>О нас</h2>
+                <p>Мы создаём сообщество людей, которые готовы делиться своими вещами. Наша цель — экономия, экология и укрепление связей в локальных сообществах.</p>
+            </div>
+        </section>
+
+       
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Контакты</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="email" name="email" placeholder="Ваш email" required>
+                    <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                    <button class="btn-primary">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 lol. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
