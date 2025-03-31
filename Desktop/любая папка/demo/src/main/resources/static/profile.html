@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+ 
+</head>
+<body onload="check_admin()">
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">MyApp</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#" onclick="exit()">Выйти</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="container">
+                <h1>Профиль пользователя</h1>
+                <div id="user-info" class="form-container">
+                   
+                    <div id="profile-form">
+                        <div class="form-group">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Фамилия:</label>
+                            <input type="text" id="surname" name="surname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="addres">Адрес доставки:</label>
+                            <input type="text" id="addres" name="addres" required>
+                        </div>
+                        <button type="submit" onclick="saveUserProfile()">Сохранить</button>
+                    </div>
+                    <div id="admin-form" >
+                        <button>перейти на админ Панель</button>
+                    </div>
+                    <div>
+                        <button onclick="addproduct()">Добавить товар</button>
+                    </div>
+                    <div>
+                        <button onclick="deleteUser()">Удалить аккаунт</button>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MyApp. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="profile.js" defer></script>
+    <script src="admin.js" defer></script>
+</body>
+</html>
